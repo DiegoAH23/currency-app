@@ -1,0 +1,9 @@
+@import "../../scss/Assets.scss";
+
+.result{
+    text-transform: lowercase;
+    color: $verySoftWhite;
+    font-size: $text;
+    text-align: center;
+    margin: 0 0 20px;
+}

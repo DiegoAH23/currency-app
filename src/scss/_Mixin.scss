@@ -1,0 +1,27 @@
+@import "./Assets.scss";
+
+@mixin input {
+    padding: 15px;
+    border-radius: 3px;
+    background-color: $softBlue;
+    color: $verySoftWhite;
+    border: none;
+    outline: none;
+
+    &::placeholder{
+        font-size: $text;
+    }
+}
+
+@mixin contentInput {
+    display: $flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@mixin label {
+    font-size: $text;
+    text-transform: lowercase;
+    font-weight: 500;
+    color: $verySoftWhite;
+}

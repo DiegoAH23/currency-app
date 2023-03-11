@@ -1,0 +1,15 @@
+@import "./Assets.scss";
+@import url($url);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: $font;
+    width: 100%;
+    background-color: $darkBlue;
+}

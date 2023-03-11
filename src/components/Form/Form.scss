@@ -1,0 +1,100 @@
+@import "../../scss/Assets.scss";
+@import "../../scss/Mixin";
+
+.app-container {
+    display: $flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    transition: $transition;
+    border-radius: 3px;
+    background-color: $blue;
+    display: $flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 550px;
+    box-shadow: 1px 1px 3px #161b29;
+
+    .form-container__label {
+        @include label;
+        margin: 0 0 5px;
+    }
+
+    .form-container__input {
+        @include input;
+    }
+
+    .form-container__btn {
+        background-color: $softGreen;
+        padding: 15px;
+        border: none;
+        border-radius: 3px;
+        text-transform: lowercase;
+        font-size: $semiTitle;
+        font-weight: 600;
+        cursor: $pointer;
+        color: $softWhite;
+    }
+
+    .form-container__err {
+        font-size: $text;
+        text-transform: lowercase;
+        text-align: center;
+        margin: 5px 0 0;
+        color: $red;
+    }
+}
+
+.form-header {
+    display: $flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 40px;
+
+    .form-header__title {
+        text-transform: uppercase;
+        color: $softWhite;
+        font-size: $title;
+    }
+}
+
+.input-select {
+    justify-content: space-between;
+    margin: 30px 0 30px;
+    display: $flex;
+
+    .from-content {
+        @include contentInput;
+
+        .from-content__select {
+            @include input;
+        }
+
+        .from-content__label {
+            @include label;
+        }
+    }
+
+    .to-content {
+        @include contentInput;
+
+        .to-content__select {
+            @include input;
+        }
+
+        .to-content__label {
+            @include label;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .form-container {
+        width: 320px;
+    }
+}
